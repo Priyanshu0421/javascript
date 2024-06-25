@@ -24,10 +24,55 @@ let valueInNumber3 = Number(score3) // true = 1 and false = 0
 // "33" => 33
 // "33ab" => Nan
 //  true => 1 & false => 0
+//  "" => false and "hitsh" => true
 
 
-let isLoggedIn = ""
+// let isLoggedIn = 0
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+// let booleanIsLoggedIn = Boolean(isLoggedIn)
 
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
+
+
+
+let someNumber = 33
+
+let numberInString = String(someNumber)
+
+// console.log(numberInString);
+// console.log(typeof numberInString);
+
+
+/*-----------------Operations----------------------*/
+
+let value = 3
+let negvalue = -value
+
+// console.log(negvalue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+
+// console.log(str3);
+
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log(3 + 4 * 5 % 3);
+
+let gameCouunters = 100
+gameCouunters++
+console.log(gameCouunters);
