@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button</button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.library = "Raect"
+            this.server = "https://localhost:3000"
+
+            document.querySelector('button').addEventListener('click' ,this.handleClick.bind(this)) // by using it will bind the value that this keywords hold and we access that value down too
+        }
+        handleClick(){
+            console.log("Button Clicked");
+            console.log(this.server); // here it will not print anything becuase it doen't have any access to it so to prevent it we use bind keyword 
+        }
+    }
+
+    const app = new React();
+</script>
+</html>
+
+
+<!-- A binding is mutable if it can be re-assigned, and immutable otherwise; this does not mean that the value it holds is immutable. -->
+
