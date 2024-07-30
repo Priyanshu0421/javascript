@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur closure</title>
+</head>
+<body style = "background-color: #313131;">
+    
+</body>
+<script>
+    function outer(){
+        let username = "username";
+        function inner() {
+            let secret = "my123"
+            console.log("inner" , username);
+        }
+        function innerTwo(){
+            // console.log("inner Two" , secret);
+            console.log("innerTwo" , username);
+        }
+        inner();
+        innerTwo();
+    }
+    // console.log("Too outer" , username);
+    outer()
+</script>
+</html>
